@@ -22,12 +22,12 @@ export function ChatSection({
     <div 
       className={`bg-[#0f0f0f] flex flex-col ${
         isMobile 
-          ? 'h-[55vh] w-full' 
+          ? 'h-[60vh] w-full' 
           : 'w-[30%]'
       }`}
     >
       {showRegisterBanner && (
-        <div className="relative bg-[#171b22] p-3 text-sm">
+        <div className="relative bg-[#171b22] p-3 text-sm border border-[#0d0f13]">
           <button
             onClick={() => setShowRegisterBanner(false)}
             className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white transition-colors"
@@ -40,7 +40,7 @@ export function ChatSection({
             rel="noopener noreferrer"
             className="text-[#fd5200] hover:text-[#e64a00] transition-colors"
           >
-            Register on Twitch to participate in chat and interact with streamers!
+            Registrate en twitch para participar en el chat
           </a>
         </div>
       )}

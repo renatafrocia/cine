@@ -40,7 +40,7 @@ export default function StreamView() {
         <div className="absolute inset-0 flex flex-col md:flex-row">
           <div className={`relative transition-all duration-300 ${
             isChatVisible && !isMobile ? 'md:w-[70%]' : 'w-full'
-          } ${isChatVisible && isMobile ? 'h-[45vh]' : 'h-full'}`}>
+          } ${isChatVisible && isMobile ? 'h-[40vh]' : 'h-full'}`}>
             <TwitchPlayer channel={CHANNEL} currentServer={currentServer} />
           </div>
           

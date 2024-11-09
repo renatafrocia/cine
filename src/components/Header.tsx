@@ -9,9 +9,9 @@ interface HeaderProps {
 
 export function Header({ onOpenSettings, currentServer }: HeaderProps) {
   return (
-    <header className="bg-[#171b22] text-white py-2 px-4 flex items-center justify-between">
+    <header className="bg-[#171b22] text-white py-2 px-4 flex items-center justify-between sticky top-0 z-50">
       <div className="flex items-center space-x-4">
-        <h1 className="text-lg md:text-xl font-coolvetica bg-gradient-to-r from-[#fd5200] to-[#ff7e00] text-transparent bg-clip-text">
+        <h1 className="text-lg md:text-xl title-font bg-gradient-to-r from-[#fd5200] to-[#ff7e00] text-transparent bg-clip-text">
           Cine Voxero
         </h1>
         <div className="hidden md:block text-sm text-gray-400">
