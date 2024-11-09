@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('https://db.onlinewebfonts.com/t/5282cf67d3132fde2e04ab8ba34fd028.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.controls-fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.controls-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 200ms, transform 200ms;
+}
+
+.controls-fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.controls-fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 200ms, transform 200ms;
+}

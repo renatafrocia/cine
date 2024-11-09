@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import StreamView from '../components/StreamView';
+---
+
+<Layout title="Cine Voxero">
+  <main class="min-h-screen bg-[#0f0f0f] text-white">
+    <StreamView client:load />
+  </main>
+</Layout>
